@@ -8,7 +8,7 @@ class base{
 	}
 
 	public void setX(int x) {
-		System.out.println("I am in a base");
+		System.out.println("I am in a base and setting x now");
 		this.x = x;
 	}
 
@@ -38,7 +38,11 @@ public class InheritanceDemo {
 		//object of base now
 		base obj =new base();
 		obj.setX(4);
-		System.out.println(obj.getX());		
+		System.out.println(obj.getX());
+		
+		//Note: object of base class can't access the member or method of child class
+		//obj.setY();
+		//System.out.println(obj1.getY());
 		
 		//object of child now
 		child obj1 =new child();
